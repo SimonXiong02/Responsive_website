@@ -1,73 +1,64 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang= "EN">
- 
+
 <head>
-    <title> My Portfolio </title>
-    <link rel="icon" type="image/jpeg" href="{% static 'images/logo.jpg' %}">
-    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <meta charset="UTF-8">
+    <title> My Predictions </title>
     <meta name = "viewport" content="width=device-width, initial-scale =1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="icon" type="image/jpeg" href="{% static 'images/logo.jpg' %}">
 </head>
 <body>
     <div class = "container">
-        <div class = "header">
+        <header class = "header">
             <div class="logo-box">
-                <img src = "images/logo.jpg" alt="image of my logo">
+                <img src = "{% static 'images/logo.jpg' %}" alt="image of my logo">
             </div>
 
             <div class="title">
                 <h1> My Portfolio </h1>
             </div>
-        </div>
+        </header>
 
         <div class = "navbar">
 
             <button class="hamburger" onclick="showMenu()">&#9776;</button>
 
-            <ul class="nav-links">		
+            <ul class="nav-links">
 
-                <li><a href="index.html">Home</a></li>
+                <li><a href="{% url 'index' %}">Home</a></li>
 
-                <li><a href="mywork.html">My Work</a></li>
+                <li><a href="{% url 'mywork' %}">My Work</a></li>
 
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
 
             </ul>
 
-        </div>		
+        </div>
 
         <div class = "main">
 
             <div class = "main-img">
 
-                <img src = "images/mainimg.png"> <alt= "portfolio image">
+                <img src = "{% static 'images/mainimg.jpg' %}" alt= "portfolio image">
 
             </div>
 
             <div class = "main-txt">
-					Auctor placerat velit non sodales ipsum sapien justo malesuada. 
-					Rutrum ultrices iaculis sit quam tristique sodales pulvinar 
-					sollicitudin elit faucibus imperdiet risus ultrices orci. 
-					Velit id ac varius quam semper tellus curabitur eget at odio ut quis.
-					Auctor aliquet semper nunc imperdiet eleifend nunc sapien vehicula 
-					eget in scelerisque sed morbi justo.<br>
- 
-					Quam quis placerat elit etiam quam faucibus dictumst mi 
-					hendrerit velit fusce litora. Ultrices nunc id dictum tortor 
-					vivamus turpis placerat leo aenean orci nisi. Sociosqu phasellus 
-					suspendisse quis mattis lectus odio diam. .<br>
+					This is a example. <br>
 
                 </div>
 
             </div>
         </div>
 <script>
- 
+
 			function showMenu(){
 				let menu = document.querySelector(".nav-links");
 				menu.classList.toggle("show-menu");
 			}
- 
+
 		</script>
 </body>
 </html>
