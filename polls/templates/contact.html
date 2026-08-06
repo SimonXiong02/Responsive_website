@@ -1,0 +1,15 @@
+{% extends 'main.html' %}
+{% block content %}
+<h1 class="contact-h1">Contact</h1>
+
+<div class="Inputs">
+    {% if success %}
+    <p>Thanks you message has been sent!</p>
+    {% endif %}
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Send</button>
+    </form>
+</div>
+{% endblock %}
