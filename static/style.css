@@ -5,8 +5,8 @@
 }
 
 html {
-    background-color: pink;
-    font-family: verdana;
+    background-color: black;
+    font-family: Arial;
 }
 
 .container {
@@ -54,7 +54,7 @@ html {
 ul {
     list-style-type: none;
     /*Removes bullet points*/
-    background-color: purple;
+    background-color: grey;
     /* changes color of the navbar*/
     display: flex;
 }
@@ -121,6 +121,11 @@ ul li a:hover {
     font-size: 30px;
     font-weight: bold;
     text-align: left;
+}
+
+.home-logo-box-1 img {
+    width: 50%
+    height: 50%
 }
 
 /* Tablet */
