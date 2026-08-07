@@ -5,7 +5,7 @@
 }
 
 html {
-    background-color: black;
+    background-color: white;
     font-family: Arial;
 }
 
@@ -48,7 +48,7 @@ html {
 .navbar {
     width: 100%;
     height: 45px;
-    border: 2px solid green;
+    border: 2px solid blue;
 }
 
 ul {
@@ -72,7 +72,7 @@ ul li a {
 
 ul li a:hover {
     /*when cursor is placed on links*/
-    background-color: pink;
+    background-color: green;
 }
 
 .main {
@@ -85,7 +85,7 @@ ul li a:hover {
 .main-img {
     height: 400px;
     margin-top: 50px;
-    border: 2px solid blue;
+    border: 2px solid green;
 }
 
 .main-txt {
@@ -98,7 +98,7 @@ ul li a:hover {
 .footer {
     display: flex;
     height: 125px;
-    border: 2px solid purple;
+    border: 2px solid black;
 }
 
 .footer a {
@@ -126,6 +126,26 @@ ul li a:hover {
 .home-logo-box-1 img {
     width: 50%
     height: 50%
+}
+
+.references {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    font-size: 30px;
+    text-align: center;
+}
+
+.references img {
+    width: 100%;
+    aspect-radio: 1 / 1;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(111, 255, 1, 0.2);
+}
+
+.references img:hover {
+    transform: scale(1.05);
 }
 
 /* Tablet */
