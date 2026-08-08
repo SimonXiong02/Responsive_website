@@ -26,11 +26,8 @@
             <button class="hamburger" onclick="showMenu()">&#9776;</button>
 
             <ul class="nav-links">
-
-                <li><a href="{% url 'index' %}">Index</a></li>
-
+                <li><a href="{% url 'home' %}">Home</a></li>
                 <li><a href="{% url 'mywork' %}">My Work</a></li>
-
                 <li><a href="{% url 'contact' %}">Contact</a></li>
 
             </ul>
@@ -53,12 +50,10 @@
             </div>
         </div>
 <script>
-
 			function showMenu(){
 				let menu = document.querySelector(".nav-links");
 				menu.classList.toggle("show-menu");
 			}
-
 		</script>
 </body>
 </html>
