@@ -7,8 +7,8 @@ from django.contrib import messages
 def home(request):
     return render(request, 'home.html')
 
-def mywork(request):
-    return render(request, 'mywork.html')
+def reference(request):
+    return render(request, 'reference.html')
 
 def contact(request):
     if request.method == "POST":

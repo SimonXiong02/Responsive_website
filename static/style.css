@@ -5,7 +5,7 @@
 }
 
 html {
-    background-color: white;
+    background-color: grey;
     font-family: Arial;
 }
 
@@ -14,7 +14,7 @@ html {
     max-width: 1500px;
     margin: 0 auto;
     border-width: 2px;
-    border-color: red;
+    border-color: white;
 }
 
 .header {
@@ -29,8 +29,6 @@ html {
     width: 180px;
     height: 180px;
     margin-top: 5px;
-    margin-left: 5px;
-    border-style: solid;
     border-radius: 90px;
 }
 
@@ -41,14 +39,14 @@ html {
 
 .title {
     font-family: Verdana, Arial, sans-serif;
-    font-size: 45px;
-    color: purple;
+    font-size: 30px;
+    color: green;
 }
 
 .navbar {
     width: 100%;
     height: 45px;
-    border: 2px solid blue;
+    border: 2px solid green;
 }
 
 ul {
@@ -75,28 +73,10 @@ ul li a:hover {
     background-color: blue;
 }
 
-/* .main {
-    display: flex;
-    width: 100%;
-}
-
-.main-img {
-    height: 50px;
-    margin-top: 50px;
-    border: 2px solid green;
-}
-
-.main-txt {
-    height: 400px;
-    margin-top: 50px;
-    line-height: 35px;
-    border: 2px solid blue;
-} */
-
 .footer {
     display: flex;
     height: 125px;
-    border: 2px solid black;
+    border: 2px solid blue;
 }
 
 .footer a {
@@ -162,34 +142,9 @@ ul li a:hover {
     .title {
         font-size: 35px;
     }
-
-    .main-txt {
-        font-size: 16px;
-    }
-
 }
 
-/*main image and main text move from side by side to one below the other.*/
 @media screen and (max-width: 768px) {
-
-    .main {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .main-img img {
-        width: 100%;
-        height: auto;
-    }
-
-    .main-img {
-        width: 65%;
-        margin: 20px auto;
-    }
-
-    .main-txt {
-        padding: 20px;
-    }
 
     .title {
         font-size: 35px;
@@ -223,10 +178,6 @@ ul li a:hover {
         display: flex;
     }
 
-    .main-txt {
-        height: auto;
-    }
-
     .navbar {
         height: auto;
     }
@@ -256,11 +207,4 @@ ul li a:hover {
     .footer .title {
         font-size: 24px;
     }
-
-    .main-img {
-        width: 65%;
-        height: auto;
-        margin: 20px auto;
-    }
-
 }
