@@ -5,7 +5,7 @@
 }
 
 html {
-    background-color: #546A64;
+    background-color: lightblue;
     font-family: Arial;
 }
 
@@ -14,7 +14,7 @@ html {
     max-width: 1500px;
     margin: 0 auto;
     border-width: 2px;
-    border-color: white;
+    border-color: lightcyan;
 }
 
 .header {
@@ -22,7 +22,7 @@ html {
     width: 100%;
     max-width: 1500px;
     margin: 0 auto;
-    border: 2px solid #83A99F;
+    border: 2px solid lightseagreen;
 }
 
 .logo-box {
@@ -70,7 +70,7 @@ ul li a {
 
 ul li a:hover {
     /*when cursor is placed on links*/
-    background-color: #64837B;
+    background-color: lightgray;
 }
 
 .footer {
