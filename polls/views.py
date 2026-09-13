@@ -10,6 +10,9 @@ def home(request):
 def reference(request):
     return render(request, 'reference.html')
 
+def gallery(request):
+    return render(request, 'gallery.html')
+
 def contact(request):
     if request.method == "POST":
         form = ContactForm(request.POST)

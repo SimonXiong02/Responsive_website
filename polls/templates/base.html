@@ -23,6 +23,7 @@
             <ul class="nav-links">
                 <li><a href="{% url 'home' %}">Home</a></li>
                 <li><a href="{% url 'reference' %}">Reference</a></li>
+                <li><a href="{% url 'gallery' %}">Gallery</a></li>
                 <li><a href="{% url 'contact' %}">Contact</a></li>
             </ul>
         </div>
@@ -34,8 +35,8 @@
         let caption = [];
 
         document.addEventListener("DOMContentLoaded", () => {
-            images = Array.from(document.querySelectorAll(".references img")).map(img => img.src);
-            captions = Array.from(document.querySelectorAll(".references img")).map(img => img.alt);
+            images = Array.from(document.querySelectorAll(".gallery img")).map(img => img.src);
+            captions = Array.from(document.querySelectorAll(".gallery img")).map(img => img.alt);
         });
 
         function openLightbox(index) {
