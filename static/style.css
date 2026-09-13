@@ -529,7 +529,7 @@ body {
         top: 8px;
     }
 
-    .references {
+    .gallery {
         grid-template-columns: 1fr;
     }
 }
