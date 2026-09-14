@@ -404,6 +404,59 @@ body {
     color: white;
 }
 
+/* ---------- FAQ ----------- */
+.faq-page {
+    width: 80%;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.faq-title {
+    color: lightseagreen;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.faq-intro {
+    color: whitesmoke;
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.faq-item {
+    background-color: rgba(20, 30, 35, 0.9);
+    border: 2px solid lightseagreen;
+    border-radius: 10px;
+    padding: 5px 20px;
+}
+
+.faq-item summary {
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 18px 5px;
+    cursor: pointer;
+}
+
+.faq-item summary:hover {
+    color: lightseagreen;
+}
+
+.faq-item p {
+    color: whitesmoke;
+    line-height: 1.7;
+    padding: 0 5px 18px;
+    margin: 0;
+}
+
 /* ---------- Contact form ---------- */
 .Inputs {
     max-width: 720px;
@@ -473,6 +526,24 @@ body {
     border: 1px solid var(--border);
 }
 
+.messages {
+    width: 80%;
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+.messages p {
+    padding: 15px;
+    border: 2px solid lightseagreen;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.messages .success {
+    color: whitesmoke;
+    background-color: rgba(32, 178, 170, 0.25);
+}
+
 /* ---------- Lightbox ---------- */
 .lightbox {
     display: none;
@@ -532,6 +603,22 @@ body {
     .gallery {
         grid-template-columns: 1fr;
     }
+
+    .robot-videos {
+        grid-template-columns: 1fr;
+    }
+
+    .faq-page {
+        width: 90%;
+    }
+
+    .faq-title {
+        font-size: 32px;
+    }
+
+    .faq-item summary {
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -587,11 +674,5 @@ body {
 
     .news-card {
         min-height: auto;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .robot-videos {
-        grid-template-columns: 1fr;
     }
 }

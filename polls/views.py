@@ -13,16 +13,20 @@ def reference(request):
 def gallery(request):
     return render(request, 'gallery.html')
 
+def faq(request):
+    return render(request, 'faq.html')
+
 def contact(request):
+    form = ContactForm()
+
     if request.method == "POST":
         form = ContactForm(request.POST)
+
         if form.is_valid():
-            # process from (e.g., print or save)
-            name = form.cleaned_data['name']
-            email = form.cleaned_data['email']
-            message = form.cleaned_data['message']
-            messages.success(request, 'Your message has been sent!')
-            return redirect('contact') # redirect to same page to clear form
-    else:
-        form = ContactForm()
-    return render(request, 'contact.html', {'form': form})
+            messages.success(
+                request,
+                "Thank you! Your message has been sent successfully."
+            )
+            form = ContactForm()
+
+    return render(request, 'contact.html', {"form": form})
