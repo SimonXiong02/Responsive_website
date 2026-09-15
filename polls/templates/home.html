@@ -1,9 +1,16 @@
 {% extends 'base.html' %}
 {% block content %}
-<h1 class="home-h1">Welcome to the prophecy of future robotics and AI.</h1>
+{% load static %}
+<div class="home-banner">
+    <img src="{% static 'images/banner.jpg' %}" alt="The future of AI and robotics">
+    <a href="{% url 'reference' %}" class="banner-button">
+        Explore references
+        <span>→</span>
+    </a>
+</div>
 
 <h1 class="title">
-    The prophecy of future A.I technologies
+    The prediction of future A.I technologies
 </h1>
 
 <p class="home-head-text">
